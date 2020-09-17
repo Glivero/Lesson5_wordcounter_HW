@@ -5,13 +5,13 @@ import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+
 import java.io.File;
 import java.io.IOException;
 
 import java.util.Map;
 
 public class WordCounterTest {
-
 
     @Test
     public void bookTest() throws IOException {
@@ -22,5 +22,4 @@ public class WordCounterTest {
         Map<String, Long> stringLongMap = wordCounterService.countWord(data);
         Assertions.assertEquals(264L, stringLongMap.get("hobbit"));
     }
-
 }

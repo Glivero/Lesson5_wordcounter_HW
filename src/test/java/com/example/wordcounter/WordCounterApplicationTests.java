@@ -36,5 +36,4 @@ class WordCounterApplicationTests {
         result.andExpect(MockMvcResultMatchers.status().isOk());
         System.out.println(result.andReturn().getResponse().getContentAsString());
     }
-
 }
