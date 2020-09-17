@@ -20,10 +20,6 @@ class WordCounterApplicationTests {
     MockMvc mockMvc;
 
     @Test
-    void contextLoads() {
-    }
-
-    @Test
     void check() throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
         WordCountRequest wordCountRequest = new WordCountRequest(1L, "Grut! I am grut!");
